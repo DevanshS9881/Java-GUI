@@ -35,13 +35,15 @@ public class TGame extends JFrame implements ActionListener
         
                 
         
-         
+      
     }
     public void GUIcreate()
      {
+         this.getContentPane().setBackground(Color.yellow);
          this.setLayout(new BorderLayout());
          heading=new JLabel("TIC TAC TOE");
          heading.setFont(font);
+         heading.setForeground(Color.green);
          this.add(heading,BorderLayout.NORTH);
          heading.setHorizontalAlignment(SwingConstants.CENTER);
          //panel section
@@ -50,6 +52,7 @@ public class TGame extends JFrame implements ActionListener
           for(int i=1;i<=9;i++)
           {
               JButton  bt=new JButton();
+              bt.setBackground(Color.cyan);
               bt.setFont(font);
               mainPanel.add(bt);
               //btn[i-1]=bt;
